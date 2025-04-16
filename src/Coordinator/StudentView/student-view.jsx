@@ -142,7 +142,9 @@ export default function StudentView({
         url: `user/trainee/${studentId}`,
         data: {
           studentId: studentId,
-          remaining_hours: hours
+          remaining_hours: hours,
+          is_verified: true,
+          is_verified_by_coordinator: true,
         }
       });
 
