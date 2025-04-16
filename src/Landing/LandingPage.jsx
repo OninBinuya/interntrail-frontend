@@ -2,6 +2,8 @@ import { useState, useEffect, Fragment } from 'react'
 import { Dialog } from '@headlessui/react'
 import './index.css'
 import AppPreview from '../assets/App_Preview.png'
+import AppPreview2 from '../assets/App_Preview2.png'
+import AppPreview3 from '../assets/App_Preview3.png'
 
 import {
   ShieldAlert,
@@ -209,7 +211,7 @@ function LandingPage() {
         {/* New subheading section */}
         <div className="mt-8 mb-10 text-center">
           <h2 className="mt-15 text-5xl font-semibold text-gray-900">
-            OJT, now simpler and easier
+            Your OJT experience, now simpler and easier
           </h2>
           <p className="mt-2 mx-auto max-w-2xl text-gray-600">
             With InternTrail, you can seamlessly track and manage trainee records, making the internship experience smoother and more efficient than ever before!
@@ -317,11 +319,11 @@ function LandingPage() {
 
         <section className="py-16">
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/2 flex justify-center items-center">
               <img
-                src={AppPreview}
+                src={AppPreview2}
                 alt="App Preview"
-                className="w-full h-auto"
+                className="w-[50%] h-auto"
               />
             </div>
             <div className="w-full lg:w-1/2 lg:pl-12 mt-8 lg:mt-0">
@@ -340,7 +342,7 @@ function LandingPage() {
           <div className="container mx-auto flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-1/2 lg:order-2">
               <img
-                src={AppPreview}
+                src={AppPreview3}
                 alt="App Preview"
                 className="w-full h-auto"
               />
