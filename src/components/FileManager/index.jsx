@@ -151,13 +151,14 @@ export default function FileManager({
 
   const handleDelete = async () => {
     if (!itemToDelete) return;
-
+  
     try {
-      const endpoint = itemToDelete.type === 'folder' ? 'folder' : 'files';
+      const endpoint = itemToDelete.type === 'folder' ? 'files/folder' : 'files';
       await axios.delete(`/${endpoint}/${itemToDelete.id}`);
       toast.success(`${itemToDelete.type === 'folder' ? 'Folder' : 'File'} deleted successfully`);
       fetchItems();
     } catch (error) {
+      console.error('Delete error:', error);
       toast.error('Failed to delete item');
     } finally {
       setDeleteDialogOpen(false);
