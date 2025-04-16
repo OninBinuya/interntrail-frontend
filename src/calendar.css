@@ -1,0 +1,48 @@
+/* Calendar.css */
+.react-calendar {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border: transparent;
+  }
+  
+  .react-calendar__tile {
+    background-color: white;
+    border-radius: 8px;
+  }
+
+    /* Current Day - add hover styles */
+  .react-calendar .react-calendar__tile--now:hover {
+    background-color: #1087ff !important; /* Keep the same blue background on hover */
+    color: #FFF !important; /* Keep white text on hover */
+  }
+
+  /* Active Day */
+  .react-calendar .react-calendar__tile--active {
+    background-color: #1F41BB; /* Blue background */
+    color: #FFF !important; /* White text for better visibility, forcefully applied */
+  }
+  
+  /* Current Day */
+  .react-calendar .react-calendar__tile--now {
+    background-color: #1F41BB; /* Blue background for the current day */
+    color: #FFF; /* White text color for current day */
+    font-weight: normal; /* No bold text for the current day */
+  }
+  
+  /* Navigation and Labels */
+  .react-calendar__navigation__label {
+    color: #1F41BB;
+    font-weight: 700;
+  }
+  
+  .react-calendar__navigation__arrow {
+    background-color: #1F41BB;
+    color: #1F41BB;
+    font-weight: 700;
+  }
+  
+  /* Color of weekends */
+  .react-calendar__month-view__days__day--weekend {
+    color: #1F41BB;
+  }
+  
