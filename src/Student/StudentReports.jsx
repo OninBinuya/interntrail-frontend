@@ -916,27 +916,15 @@ function StudentReports() {
                 </div>
               )}
 
-              <div className="flex justify-end gap-2">
-                <Button
-                  variant="outline"
-                  onClick={() => setIsViewModalOpen(false)}
-                >
-                  Close
-                </Button>
-                {selectedReport.status !== 'resolved' && (
-                  <Button
-                    variant="outline"
-                    className="border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100"
-                    onClick={() => {
-                      setIsViewModalOpen(false);
-                      handleEdit(selectedReport);
-                    }}
-                  >
-                    <Edit2 className="h-4 w-4 mr-2" />
-                    Edit Report
-                  </Button>
-                )}
-              </div>
+            <div className="flex justify-end gap-2">
+              <Button
+                variant="outline"
+                onClick={() => setIsViewModalOpen(false)}
+              >
+                Close
+              </Button>
+            </div>
+
             </div>
           )}
         </DialogContent>
