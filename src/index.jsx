@@ -9,6 +9,7 @@ import UnauthorizedPage from './components/UnauthorizedPage';
 import { initializeApp } from './app/init';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import GuidePage from './Landing/guidePage';
 
 // Main Dashboards
 import StudentDashboard from './Student/StudentDashboard';
@@ -47,6 +48,7 @@ root.render(
         <Route path="/user-selection/" element={<UserSelection />} />
         <Route path="/account-creation/" element={<AccountCreation />} />
         <Route path="/sign-up-confirmation/" element={<SignUpConfirmation />} />
+        <Route path="/guidePage" element={<GuidePage />} />
 
         {/* Protected Routes */}
         <Route

@@ -244,36 +244,35 @@ function StudentHome() {
 
   console.log({ totalRenderedHours })
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
+    <div className="p-0">
+      <h1 className="text-2xl font-semibold mb-6">Dashboard</h1>
 
       {/* Header Stats */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-        <Card>
-          <CardContent className="flex flex-col items-center justify-center p-6">
+      <Card className="col-span-1 md:col-span-2">
+        <CardContent className="flex flex-col items-center justify-center p-6">
             <div className="bg-blue-100 p-2 rounded-full mb-4">
-              <Clock className="h-6 w-6 text-blue-700" />
+                <Clock className="h-6 w-6 text-blue-700" />
             </div>
-            <CardTitle className="text-lg font-medium mb-2">Total Hours</CardTitle>
+            <CardTitle className="text-lg font-semibold mb-2">Total Hours</CardTitle>
             {isProgressLoading ? (
-              <Skeleton className="h-16 w-24" />
+                <Skeleton className="h-16 w-24" />
             ) : (
-              <>
-                <div className="text-3xl font-bold text-blue-700">{totalRenderedHours}</div>
-                <div className="text-sm text-gray-500 mt-1">
-                  out of {totalOJTHours} required hours
-                </div>
-                <div className="w-full mt-2">
-                  <Progress
-                    value={Math.min((parseFloat(totalRenderedHours) / totalOJTHours) * 100, 100)}
-                    className="h-2"
-                  />
-                </div>
-              </>
+                <>
+                    <div className="text-3xl font-semibold text-blue-700">{totalRenderedHours}</div>
+                    <div className="text-sm text-gray-500 mt-1">
+                        out of {totalOJTHours} required hours
+                    </div>
+                    <div className="w-full mt-2">
+                        <Progress
+                            value={Math.min((parseFloat(totalRenderedHours) / totalOJTHours) * 100, 100)}
+                            className="h-2"
+                        />
+                    </div>
+                </>
             )}
-          </CardContent>
-        </Card>
-
+        </CardContent>
+    </Card>
         {/* <Card>
           <CardContent className="flex flex-col items-center justify-center p-6">
             <div className="bg-green-100 p-2 rounded-full mb-4">
@@ -296,7 +295,7 @@ function StudentHome() {
             <div className="bg-purple-100 p-2 rounded-full mb-4">
               <GraduationCap className="h-6 w-6 text-purple-700" />
             </div>
-            <CardTitle className="text-lg font-medium mb-2">Program</CardTitle>
+            <CardTitle className="text-lg font-semibold mb-2">Program</CardTitle>
             {loading ? (
               <Skeleton className="h-8 w-36" />
             ) : (
@@ -312,7 +311,7 @@ function StudentHome() {
             <div className="bg-amber-100 p-2 rounded-full mb-4">
               <Building2 className="h-6 w-6 text-amber-700" />
             </div>
-            <CardTitle className="text-lg font-medium mb-2">Company</CardTitle>
+            <CardTitle className="text-lg font-semibold mb-2">Company</CardTitle>
             {loading ? (
               <Skeleton className="h-8 w-36" />
             ) : (
