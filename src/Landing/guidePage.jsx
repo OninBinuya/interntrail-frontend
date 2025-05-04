@@ -183,7 +183,7 @@ function GuidePage() {
                 Guide for tracking hours and submitting requirements
               </p>
               <a 
-                href="public/manuals/User_Manual_Student_Trainee.pdf" 
+                href="/manuals/User_Manual_Student_Trainee.pdf" 
                 className="mt-auto flex items-center gap-2 text-indigo-600 font-medium hover:text-indigo-800 transition-colors"
                 download
               >
@@ -201,7 +201,7 @@ function GuidePage() {
                 Manual for managing students and coordinating internships
               </p>
               <a 
-                href="public/manuals/User_Manual_OJT_Coordinator.pdf" 
+                href="/manuals/User_Manual_OJT_Coordinator.pdf" 
                 className="mt-auto flex items-center gap-2 text-purple-600 font-medium hover:text-purple-800 transition-colors"
                 download
               >
@@ -219,7 +219,7 @@ function GuidePage() {
                 Guide for evaluating and managing intern performance
               </p>
               <a 
-                href="public/manuals/User_Manual_of_HTE_Supervisor.pdf" 
+                href="/manuals/User_Manual_of_HTE_Supervisor.pdf" 
                 className="mt-auto flex items-center gap-2 text-amber-600 font-medium hover:text-amber-800 transition-colors"
                 download
               >
@@ -237,7 +237,7 @@ function GuidePage() {
                 Manual for overseeing college internship programs
               </p>
               <a 
-                href="public/manuals/User_Manual_of_Dean.pdf" 
+                href="/manuals/User_Manual_of_Dean.pdf" 
                 className="mt-auto flex items-center gap-2 text-green-600 font-medium hover:text-green-800 transition-colors"
                 download
               >
