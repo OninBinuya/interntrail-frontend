@@ -113,22 +113,17 @@ function StudentProgress() {
 
   return isLoaded && (
     <div className='space-y-4 sm:space-y-6'>
-      <h1 className='text-xl sm:text-2xl font-semibold'>Progress Reports</h1>
-
+      {studentData?.first_name && (
+        <h1 className='text-xl sm:text-2xl font-semibold text-blue-500'>
+          {studentData?.first_name + " " + studentData?.last_name}
+        </h1>
+      )}
+      <h3>Progress Report</h3>
       <div className="progress-container">
-        <StudentDTR
-          supervisorName={supervisorName}
-        />
+        <StudentDTR supervisorName={supervisorName} />
       </div>
-
-
-
-      {/* <WeeklyReport
-        weeklyReport={weeklyReportData}
-        supervisorName={supervisorName}
-      /> */}
-
     </div>
+    //merge
   );
 }
 
