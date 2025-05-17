@@ -121,44 +121,6 @@ function GuidePage() {
             </div>
         </section>
 
-        <section className="py-16 bg-gray-50">
-        <div className="container mx-auto">
-            
-            <div className="max-w-3xl mx-auto">
-                <div className="text-center mb-12">
-                <h2 className="text-4xl font-semibold text-gray-900 mb-4">
-                    Frequently Asked Questions
-                </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                    Find answers to common questions about using InternTrail.
-                </p>
-                </div>
-                <div className="space-y-8">
-                    <div className="text-center">
-                        <h3 className="text-lg font-semibold mb-2">How do I track my hours?</h3>
-                        <p className="text-gray-600 mx-auto max-w-lg">
-                            Use the dashboard to view your total rendered hours and progress toward your required hours.
-                        </p>
-                    </div>
-                
-                <div className="text-center">
-                    <h3 className="text-lg font-semibold mb-2">How do I upload documents?</h3>
-                    <p className="text-gray-600 mx-auto max-w-lg">
-                        Navigate to the "Requirements" section and use the upload feature to submit your files.
-                    </p>
-                </div>
-                
-                <div className="text-center">
-                    <h3 className="text-lg font-semibold mb-2">Who can I contact for support?</h3>
-                    <p className="text-gray-600 mx-auto max-w-lg">
-                        Reach out to your coordinator or directly contact us via Google Forms.
-                    </p>
-                </div>
-            </div>
-            </div>
-        </div>
-        </section>
-
         <section className="py-16">
         <div className="text-center mb-12">
             <h2 className="text-4xl font-semibold text-gray-900 mb-4">
@@ -251,6 +213,44 @@ function GuidePage() {
 
         </div>
       </section>
+
+        <section className="py-16 bg-gray-50">
+        <div className="container mx-auto">
+            
+            <div className="max-w-3xl mx-auto">
+                <div className="text-center mb-12">
+                <h2 className="text-4xl font-semibold text-gray-900 mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                    Find answers to common questions about using InternTrail.
+                </p>
+                </div>
+                <div className="space-y-8">
+                    <div className="text-center">
+                        <h3 className="text-lg font-semibold mb-2">How do I track my hours?</h3>
+                        <p className="text-gray-600 mx-auto max-w-lg">
+                            Use the dashboard to view your total rendered hours and progress toward your required hours.
+                        </p>
+                    </div>
+                
+                <div className="text-center">
+                    <h3 className="text-lg font-semibold mb-2">How do I upload documents?</h3>
+                    <p className="text-gray-600 mx-auto max-w-lg">
+                        Navigate to the "Requirements" section and use the upload feature to submit your files.
+                    </p>
+                </div>
+                
+                <div className="text-center">
+                    <h3 className="text-lg font-semibold mb-2">Who can I contact for support?</h3>
+                    <p className="text-gray-600 mx-auto max-w-lg">
+                        Reach out to your coordinator or directly contact us via Google Forms.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
 
       </main>
 
