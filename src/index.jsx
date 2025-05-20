@@ -32,6 +32,7 @@ import EmailVerified from './Login/EmailVerified';
 import PasswordChangedSuccess from './Login/PasswordChangedSuccess'; // Import the PasswordChangedSuccess component
 import ResetPasswordResult from './Login/ResetPasswordResult';
 import LandingPage from './Landing/LandingPage';
+import WorkInProgress from './Landing/wip';
 
 initializeApp();
 
@@ -41,14 +42,18 @@ root.render(
     <ToastContainer />
     <BrowserRouter>
       <Routes>
+        {/* Disabled Routes */}
+        <Route path="/wip" element={<WorkInProgress />} />
+        <Route path="/login" element={<WorkInProgress />} /> {/* Login */}
+        <Route path="/user-selection/" element={<WorkInProgress />} /> {/* UserSelection */}
+        
         <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/unauthorized" element={<UnauthorizedPage />} />
         <Route path="/email-verified" element={<EmailVerified />} />
-        <Route path="/user-selection/" element={<UserSelection />} />
         <Route path="/account-creation/" element={<AccountCreation />} />
         <Route path="/sign-up-confirmation/" element={<SignUpConfirmation />} />
         <Route path="/guidePage" element={<GuidePage />} />
+        <Route path="/wip" element={<WorkInProgress />} />
 
         {/* Protected Routes */}
         <Route
