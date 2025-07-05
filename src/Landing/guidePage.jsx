@@ -121,6 +121,99 @@ function GuidePage() {
             </div>
         </section>
 
+        <section className="py-16">
+        <div className="text-center mb-12">
+            <h2 className="text-4xl font-semibold text-gray-900 mb-4">
+              User Manuals
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Download comprehensive user manuals tailored for your specific role.
+            </p>
+          </div>
+          
+        <div className="container mx-auto">
+
+          
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+            <div className="p-6 border rounded-lg shadow-sm flex flex-col items-center">
+
+              <div className="bg-indigo-100 p-3 rounded-full mb-4">
+                <GraduationCap className="h-8 w-8 text-indigo-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-center">Student Trainee</h3>
+              <p className="text-gray-600 text-center mb-4">
+                Guide for tracking hours and submitting requirements
+              </p>
+              <a 
+                href="/manuals/User_Manual_Student_Trainee.pdf" 
+                className="mt-auto flex items-center gap-2 text-indigo-600 font-medium hover:text-indigo-800 transition-colors"
+                download
+              >
+                <Download size={18} />
+                <span>Download PDF</span>
+              </a>
+            </div>
+            
+            <div className="p-6 border rounded-lg shadow-sm flex flex-col items-center">
+              <div className="bg-purple-100 p-3 rounded-full mb-4">
+                <BookOpen className="h-8 w-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-center">College Coordinator</h3>
+              <p className="text-gray-600 text-center mb-4">
+                Manual for managing students and coordinating internships
+              </p>
+              <a 
+                href="/manuals/User_Manual_OJT_Coordinator.pdf" 
+                className="mt-auto flex items-center gap-2 text-purple-600 font-medium hover:text-purple-800 transition-colors"
+                download
+              >
+                <Download size={20} />
+                <span>Download PDF</span>
+              </a>
+            </div>
+            
+            <div className="p-6 border rounded-lg shadow-sm flex flex-col items-center">
+              <div className="bg-amber-100 p-3 rounded-full mb-4">
+                <Building2 className="h-8 w-8 text-amber-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-center">HTE Supervisor</h3>
+              <p className="text-gray-600 text-center mb-4">
+                Guide for evaluating and managing intern performance
+              </p>
+              <a 
+                href="/manuals/User_Manual_of_HTE_Supervisor.pdf" 
+                className="mt-auto flex items-center gap-2 text-amber-600 font-medium hover:text-amber-800 transition-colors"
+                download
+              >
+                <Download size={18} />
+                <span>Download PDF</span>
+              </a>
+            </div>
+            
+            <div className="p-6 border rounded-lg shadow-sm flex flex-col items-center">
+              <div className="bg-green-100 p-3 rounded-full mb-4">
+                <Award className="h-8 w-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-center">Dean</h3>
+              <p className="text-gray-600 text-center mb-4">
+                Manual for overseeing college internship programs
+              </p>
+              <a 
+                href="/manuals/User_Manual_of_Dean.pdf" 
+                className="mt-auto flex items-center gap-2 text-green-600 font-medium hover:text-green-800 transition-colors"
+                download
+              >
+                <Download size={18} />
+                <span>Download PDF</span>
+              </a>
+            </div>
+
+            
+          </div>
+
+        </div>
+      </section>
+
         <section className="py-16 bg-gray-50">
         <div className="container mx-auto">
             
@@ -158,99 +251,6 @@ function GuidePage() {
             </div>
         </div>
         </section>
-
-        <section className="py-16">
-        <div className="text-center mb-12">
-            <h2 className="text-4xl font-semibold text-gray-900 mb-4">
-              User Manuals
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Download comprehensive user manuals tailored for your specific role.
-            </p>
-          </div>
-          
-        <div className="container mx-auto">
-
-          
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-            <div className="p-6 border rounded-lg shadow-sm flex flex-col items-center">
-
-              <div className="bg-indigo-100 p-3 rounded-full mb-4">
-                <GraduationCap className="h-8 w-8 text-indigo-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-center">Student Trainee</h3>
-              <p className="text-gray-600 text-center mb-4">
-                Guide for tracking hours and submitting requirements
-              </p>
-              <a 
-                href="public/manuals/User_Manual_Student_Trainee.pdf" 
-                className="mt-auto flex items-center gap-2 text-indigo-600 font-medium hover:text-indigo-800 transition-colors"
-                download
-              >
-                <Download size={18} />
-                <span>Download PDF</span>
-              </a>
-            </div>
-            
-            <div className="p-6 border rounded-lg shadow-sm flex flex-col items-center">
-              <div className="bg-purple-100 p-3 rounded-full mb-4">
-                <BookOpen className="h-8 w-8 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-center">College Coordinator</h3>
-              <p className="text-gray-600 text-center mb-4">
-                Manual for managing students and coordinating internships
-              </p>
-              <a 
-                href="public/manuals/User_Manual_OJT_Coordinator.pdf" 
-                className="mt-auto flex items-center gap-2 text-purple-600 font-medium hover:text-purple-800 transition-colors"
-                download
-              >
-                <Download size={20} />
-                <span>Download PDF</span>
-              </a>
-            </div>
-            
-            <div className="p-6 border rounded-lg shadow-sm flex flex-col items-center">
-              <div className="bg-amber-100 p-3 rounded-full mb-4">
-                <Building2 className="h-8 w-8 text-amber-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-center">HTE Supervisor</h3>
-              <p className="text-gray-600 text-center mb-4">
-                Guide for evaluating and managing intern performance
-              </p>
-              <a 
-                href="public/manuals/User_Manual_of_HTE_Supervisor.pdf" 
-                className="mt-auto flex items-center gap-2 text-amber-600 font-medium hover:text-amber-800 transition-colors"
-                download
-              >
-                <Download size={18} />
-                <span>Download PDF</span>
-              </a>
-            </div>
-            
-            <div className="p-6 border rounded-lg shadow-sm flex flex-col items-center">
-              <div className="bg-green-100 p-3 rounded-full mb-4">
-                <Award className="h-8 w-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-center">Dean</h3>
-              <p className="text-gray-600 text-center mb-4">
-                Manual for overseeing college internship programs
-              </p>
-              <a 
-                href="public/manuals/User_Manual_of_Dean.pdf" 
-                className="mt-auto flex items-center gap-2 text-green-600 font-medium hover:text-green-800 transition-colors"
-                download
-              >
-                <Download size={18} />
-                <span>Download PDF</span>
-              </a>
-            </div>
-
-            
-          </div>
-
-        </div>
-      </section>
 
       </main>
 
