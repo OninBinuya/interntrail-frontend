@@ -1,8 +1,7 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-let VITE_REACT_APP_BASE_URL =
-  'https://inter-trail-server-final-c1c7b6650bc6.herokuapp.com';
+let VITE_REACT_APP_BASE_URL = 'https://inter-trail-server-final-c1c7b6650bc6.herokuapp.com';
 
 // let VITE_REACT_APP_BASE_URL = 'http://localhost:5000';
 

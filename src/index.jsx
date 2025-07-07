@@ -44,8 +44,8 @@ root.render(
       <Routes>
         {/* Disabled Routes */}
         <Route path="/wip" element={<WorkInProgress />} />
-        <Route path="/login" element={<WorkInProgress />} /> {/* Login */}
-        <Route path="/user-selection/" element={<WorkInProgress />} /> {/* UserSelection */}
+        <Route path="/login" element={<Login/>} /> {/* Login */}
+        <Route path="/user-selection/" element={<UserSelection />} /> {/* UserSelection */}
         
         <Route path="/" element={<LandingPage />} />
         <Route path="/unauthorized" element={<UnauthorizedPage />} />
